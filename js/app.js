@@ -36,7 +36,11 @@
 	});
 
 	$(window).load(function(){
-
+		startselector = document.getElementById("startselector");
+		if(startselector)
+		{
+			startselector.click();
+		}
 	});
 
 })(jQuery, document, window);
