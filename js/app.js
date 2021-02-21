@@ -36,10 +36,24 @@
 	});
 
 	$(window).load(function(){
-		startselector = document.getElementById("startselector");
-		if(startselector)
+		if(window.location.href.split("?")[1])
 		{
-			startselector.click();
+			var category = window.location.href.split("?")[1].split("=")[1];
+			if(category)
+			{
+				select = document.getElementById(category);
+				if(select)
+				{
+					select.click();
+				}
+			}else
+			{
+				startselector = document.getElementById("painting");
+				if(startselector)
+				{
+					startselector.click();
+				}
+			}
 		}
 	});
 
