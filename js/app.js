@@ -55,6 +55,14 @@
 				}
 			}
 		}
+		else
+		{
+			startselector = document.getElementById("painting");
+			if(startselector)
+			{
+				startselector.click();
+			}
+		}
 	});
 
 })(jQuery, document, window);
